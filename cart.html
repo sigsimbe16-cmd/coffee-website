@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <div id="cart-container">
+    <h1>🛒 My Cart</h1>
+
+    <!-- Cart Table -->
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Cart items will be dynamically loaded here via cart.js -->
+      </tbody>
+    </table>
+
+    <!-- Cart Action Buttons -->
+    <div class="cart-actions">
+      <button id="continue-shopping">⬅ Continue Shopping</button>
+      <button id="my-cart">📋 My Cart</button>
+      <button id="clear-cart">🗑 Clear Cart</button>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
